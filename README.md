@@ -12,7 +12,7 @@ The scraping process was designed to collect data for flights departing from a s
 
 Note that the Departure Time feature also includes the Source airport, and the Arrival Time feature also includes the Destination airport. Which is later extracted in Cleaned_dataset. Also both cleaned and scraped datasets have provided so that one can use dataset as per their requirement and convenience.
 
-##Inspiration:
+## Inspiration:
 Dataset created to provide users with valuable resource for analyzing flight fares in India.
 
 Detailed information on flight fares over time can be used to develop more accurate pricing models and inform users about best times to book tickets.
