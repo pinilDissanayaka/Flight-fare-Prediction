@@ -5,7 +5,7 @@ import numpy as np
 
 app = Flask(__name__, template_folder='./Templates', static_folder='./Static')
 
-Pkl_Filename = "rf_tuned.pkl" 
+Pkl_Filename = "Predic.pickle" 
 
 with open(Pkl_Filename, 'rb') as file:  
     model = pickle.load(file)
