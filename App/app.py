@@ -1,7 +1,7 @@
 from flask import Flask, request, url_for, redirect, render_template
 import pickle
-
 import numpy as np
+import pandas as pd
 
 app = Flask(__name__, template_folder='./Templates', static_folder='./Static')
 
@@ -18,12 +18,13 @@ def hello_world():
 
 @app.route('/predict', methods=['POST','GET'])
 def predict():
-    features = [int(x) for x in request.form.values()]
+    input_data = [int(x) for x in request.form.values()]
 
-    print(features)
-    final = np.array(features).reshape((1,6))
-    print(final)
-    pred = model.predict(final)[0]
+    #print(features)
+    input_arr = np.array(input_data).reshape((1, 12))
+    input_df = pd.DataFrame(data = input_arr, columns = ['Airline', 'Source', 'Destination', 'Total_Stops', 'Additional_Info', 'Jorney_day', 'Jorney_month', 'Dep_hour', 'Dep_min', 'Arr_hour', 'Arr_min', 'Duration(min)'])
+    print(input_df)
+    pred = model.predict(input_df)[0]
     print(pred)
 
     

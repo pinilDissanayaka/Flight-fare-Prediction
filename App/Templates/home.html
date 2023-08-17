@@ -28,9 +28,9 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
-      <h1 class="header center red-text">Medical Cost Prediction</h1>
+      <h1 class="header center red-text">Flight fare Prediction</h1>
       <div class="row center">
-        <h5 class="header col s12 light black-text">Predict the cost for your Medical Insurance!
+        <h5 class="header col s12 light black-text">Predict the cost for your Travel!
         <br>
         </h5>
       </div>
@@ -39,42 +39,73 @@
     <form action='/predict' method="post" class="col s12">
       <div class="row">
         <div class="input-field col s4">
-            <label for="first_name" style="font-size: 20px"><b>Age</b></label>
+            <label for="first_name" style="font-size: 20px"><b>Air Line</b></label>
             <br>
-            <input placeholder="Age" name="age" id="age" type="text" class="validate">
+            <input placeholder="Airline" name="Airline" id="Airline" type="text" class="validate">
         </div>
 
         <div class="input-field col s4">
-            <label for="_name" style="font-size: 20px"><b>Gender</b></label>
+            <label for="_name" style="font-size: 20px"><b>Source</b></label>
             <br>
-            <input id="_name" name="Gender" placeholder="0 - Male/1 - Female" type="text" class="validate">
+            <input id="_name" name="Source" placeholder=" " type="text" class="validate">
         </div>
 
         <div class="input-field col s4">
-            <label for="last_name" style="font-size: 20px"><b>BMI</b></label>
+            <label for="last_name" style="font-size: 20px"><b>Destination</b></label>
               <br>
-            <input id="bmi" name="bmi" placeholder="BMI"  type="text" class="validate">
+            <input id="Destination" name="Destination" placeholder="Destination"  type="text" class="validate">
           </div>
 
         <div class="input-field col s4">
 
-            <label for="last_name" style="font-size: 20px"><b>Childrens</b></label>
+            <label for="last_name" style="font-size: 20px"><b>Total_Stops</b></label>
               <br>
-            <input id="children" name="children" placeholder="0 for None"  type="text" class="validate">
+            <input id="chiTotal_Stops" name="Total_Stops" placeholder="1, 2, 3, 4"  type="text" class="validate">
   
           </div>
 
         <div class="input-field col s4">
-            <label for="smoker" style="font-size: 20px"><b>Do you Smoke?</b></label>
+            <label for="smoker" style="font-size: 20px"><b>Additional_Info</b></label>
             <br>
-            <input id="smoker" name="smoker" placeholder="1 - Yes/0 - No" type="text" class="validate">
+            <input id="Additional_Info" name="Additional_Info" placeholder=" " type="text" class="validate">
         </div>
 
         <div class="input-field col s4">
-            <label for="region" style="font-size: 20px"><b>Which Region?</b></label>
+            <label for="region" style="font-size: 20px"><b>Jorney_day</b></label>
             <br>
-            <input id="region" name="region" placeholder="0-NW/1-NE/2-SE/3-SW" type="text" class="validate">
+            <input id="Jorney_day" name="Jorney_day" placeholder=" " type="text" class="validate">
         </div>
+        <div class="input-field col s4">
+          <label for="region" style="font-size: 20px"><b>Jorney_month</b></label>
+          <br>
+          <input id="Jorney_month" name="Jorney_month" placeholder=" " type="text" class="validate">
+      </div>
+      <div class="input-field col s4">
+        <label for="region" style="font-size: 20px"><b>Dep_hour</b></label>
+        <br>
+        <input id="Dep_hour" name="Dep_hour" placeholder=" " type="text" class="validate">
+    </div>
+    <div class="input-field col s4">
+      <label for="region" style="font-size: 20px"><b>Dep_min</b></label>
+      <br>
+      <input id="Dep_min" name="Dep_min" placeholder=" " type="text" class="validate">
+  </div>
+  <div class="input-field col s4">
+    <label for="region" style="font-size: 20px"><b>Arr_hour</b></label>
+    <br>
+    <input id="Arr_hour" name="Arr_hour" placeholder=" " type="text" class="validate">
+</div>
+<div class="input-field col s4">
+  <label for="region" style="font-size: 20px"><b>Arr_min</b></label>
+  <br>
+  <input id="Arr_min" name="Arr_min" placeholder=" " type="text" class="validate">
+</div>
+<div class="input-field col s4">
+  <label for="region" style="font-size: 20px"><b>Duration(min)</b></label>
+  <br>
+  <input id="Duration(min)" name="Duration(min)" placeholder=" " type="text" class="validate">
+</div>
+
       </div>
 
       <div class="row center">
